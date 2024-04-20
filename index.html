@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal_Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="#" class="logo">Sarthak.</a>
+        <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About Me</a>
+            <a href="#Skills">Skills</a>
+            <a href="#education">Education</a>
+            <a href="#contact">Contact Me</a>
+        </nav>
+    </header>
+    <section class="home" id="home">
+
+        <div class="text-content">
+            <h2>Sarthak Dey</h2>
+            <h5>Front-End Developer</h5>
+            <p>Sarthak is a beginner front-end developer, crafting captivating websites that blend aesthetics with functionality. With a keen eye for design and a passion for coding, he brings digital visions to life, seamlessly integrating user experience and visual appeal.</p>
+
+            <button class="btn"><a href="Sarthak Dey_CV.pdf" target="_blank" style="color: white;">Download C.V</a></button>
+        </div>
+        <div class="cover">
+            <div class="image"></div>
+            <div class="layout"></div>
+        </div>
+    </section>
+    <section class="about" id="about">
+        <div class="image-cover">
+
+            <div class="img">
+                <h2>SARTHAK DEY</h2>
+                <h5>WEBSITE DESIGNER</h5>
+                <img src="pictureproj.jpg" alt="">
+            </div>
+        </div>
+        <div class="about-text">
+            <h3 class="title"><i class='bx bx-user'></i>ABOUT ME</h3>
+            <p>Sarthak Dey, a developer from Kolkata, excels in both front-end and back-end development. Mastering HTML, CSS, JavaScript, and React.js, Sarthak creates dynamic, interactive web applications with captivating user experiences. Proficient in MongoDB, SQL, and Django, Sarthak designs robust database architectures, manages data effectively, and builds scalable, secure web solutions.</p>
+        </div>
+    </section>
+    <section class="Skills" id="Skills">
+        <h3 class="title"><i class='bx bx-user'></i>SKILLS</h3>
+        <div class="skill-container">
+            <div class="skills-content">
+                <i class='bx bx-code-alt'></i>
+                <h5>Frontend Web Developer</h5>
+                <p>I'm well-versed in front-end development, mastering HTML, CSS, and JavaScript, with a proficiency in React.js. My skills enable creating dynamic, interactive, and visually appealing web applications. Your expertise in these technologies that craft engaging user experiences and navigate the complexities of modern web development effortlessly.</p>
+                <button class="btn">Read More</button>
+            </div>
+            <div class="skills-content">
+                <i class='bx bx-signal-5'></i>
+                <h5>Backend Web Developer</h5>
+                <p>I'm skilled in backend development, proficient in MongoDB for NoSQL databases, SQL for relational databases, and Django for web framework tasks. My expertise allows you to design robust database architectures, manage data effectively, and build scalable, secure, and high-performance web applications.</p>
+                <button class="btn">Read More</button>
+            </div>
+        </div>
+    </section>
+    <section class="education" id="education">
+        <h3 class="title"><i class='bx bx-book-open'></i>EDUCATION</h3>
+        <div class="row">
+            <div class="column">
+                <div class="education-content">
+                    <div class="year"><i class='bx bx-time'>2007-2022</i></div>
+                    <h2>Garden High School</h2>
+                    <p>I have passed my 12th from ICSE board with 98.6%</p>
+                </div>
+            </div>
+            <div class="column">
+                <div class="education-content">
+                    <div class="year"><i class='bx bx-time'></i>2022-2026</div>
+                    <h2>Vellore Institute of Technology</h2>
+                    <p>I'm pursuing my Btech from Vit Vellore. My CGPA is 8.62.</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <section class="contact" id="contact">
+        <h2 class="title"><i class='bx bx-headphone'></i>CONTACT ME</h2>
+        <form action="#" id="">
+            <div class="input-box">
+                <input type="text" required placeholder="Full Name">
+                <input type="email" required placeholder="Email">
+            </div>
+            <div class="input-box">
+                <input type="tel" required placeholder="Mobile Number">
+                <input type="text" required placeholder="Subject For">
+            </div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Message" required></textarea>
+            <input type="submit" value="Send Message" class="btn">
+        </form>
+    </section>
+    <footer>
+        <div class="text">
+            <p> @ 2024 by Sarthak Dey.</p>
+        </div>
+    </footer>
+    <script>
+        const menubar = document.querySelector('#menu');
+const Navbar = document.querySelector('.navbar');
+menubar.onclick=()=>{
+    // menubar.classList.toggle('bx-x');
+    Navbar.classList.toggle('active')
+}
+const section=document.querySelectorAll('section');
+const navlink = document.querySelectorAll('header nav a')
+// window.onscroll = ()=>{
+//     section.forEach(sec=>{
+//         let top = window.scrollY;
+//         let offset = sec.offsetTop - 150;
+//         let height = sec.offsetHeight;
+//         let id = sec.getAttribute('id')
+//         if(top>offset && top < offset + height){
+//             sec.classList.add('start-animation');
+//             navlink.forEach(links=>{
+//                 links.classList.remove('active')
+//                 document.querySelector('header nav a[href*='+id+']').classList.add('active')
+              
+//             })
+//         }
+//     })
+//     var header = document.querySelector('.header');
+//     header.classList.toggle('sticky',window.scrollY>100)
+//     menubar.classList.remove('bx-x');
+//     Navbar.classList.remove('active')
+// }
+
+    </script>
+</body>
+
+</html>
